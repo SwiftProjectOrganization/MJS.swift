@@ -100,5 +100,5 @@ extension AddTournamentView {
 }
 
 #Preview {
-    AddTournamentView()
+  AddTournamentView()
 }

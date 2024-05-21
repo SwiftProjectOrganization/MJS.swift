@@ -35,40 +35,40 @@ extension CompleteGameView: View {
           List {
             HStack {
               Spacer(minLength: 40)
-              Text("\(gameWinnerName)")
-                .multilineTextAlignment(.leading)
+              Text("\(gameWinnerName):")
+                .multilineTextAlignment(.trailing)
               Spacer()
               TextField("Game score", text: $gameWinnerScore)
                 .focused($focusedField)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.trailing)
              Spacer(minLength: 40)
             }
             HStack {
               Spacer(minLength: 40)
-              Text("\(gameSpName)")
-                .multilineTextAlignment(.leading)
+              Text("\(gameSpName):")
+                .multilineTextAlignment(.trailing)
               Spacer()
               TextField("Game score", text: $gameSpScore)
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(.trailing)
              Spacer(minLength: 40)
             }
             HStack {
               Spacer(minLength: 40)
-              Text("\(gameTpName)")
-                .multilineTextAlignment(.leading)
+              Text("\(gameTpName):")
+                .multilineTextAlignment(.trailing)
               Spacer()
-              TextField("Game score:", text: $gameTpScore)
-                .multilineTextAlignment(.center)
+              TextField("Game score", text: $gameTpScore)
+                .multilineTextAlignment(.trailing)
               Spacer(minLength: 40)
             }
             HStack {
               Spacer(minLength: 40)
-              Text("\(gameLpName)")
-                .multilineTextAlignment(.leading)
+              Text("\(gameLpName):")
+                .multilineTextAlignment(.trailing)
               Spacer()
-              TextField("Game score:", text: $gameLpScore)
-                .multilineTextAlignment(.center)
-               Spacer(minLength: 40)
+              TextField("Game score", text: $gameLpScore)
+                .multilineTextAlignment(.trailing)
+              Spacer(minLength: 40)
             }
           }
         }
